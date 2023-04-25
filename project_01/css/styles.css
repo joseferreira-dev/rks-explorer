@@ -1,0 +1,13 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --highlight-text-color: #FF9900;
+  --footer-border-color: #ECEFF2;
+}
+
+html {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 16px;
+	box-sizing: border-box;
+}
