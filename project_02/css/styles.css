@@ -3,11 +3,11 @@
 
 :root {
 	--brand-color: #89C5CC;
-  --title-text-color: #1F1534;
-  --body-text-color: #7D7987;
-  --btn-bg-color: #69B99D;
-  --btn-text-color: #F9F9F9;
-  --background-color: #FFF;
+	--menu-text-color: #1F1534;
+	--body-text-color: #7D7987;
+	--btn-bg-color: #69B99D;
+	--btn-text-color: #F9F9F9;
+	--background-color: #FFF;
 }
 
 html {
@@ -15,4 +15,133 @@ html {
 	font-size: 16px;
 	box-sizing: border-box;
 	background-color: var(--background-color);
+}
+
+body {
+	position: relative;
+}
+
+.illustration__balls {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.container {
+	max-width: 64rem;
+	padding-left: 1.75rem;
+	padding-right: 1.75rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 4rem;
+	margin-bottom: 3.5rem;
+}
+
+.header img {
+	width: 6.5rem;
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+
+.nav__item a {
+	color: var(--menu-text-color);
+	display: block;
+	padding: .25rem;
+	font-family: 'Mulish', Arial, sans-serif;
+	font-size: 1.125rem;
+	font-weight: 400;
+	text-decoration: none;
+	opacity: .5;
+}
+
+.nav__item a:hover {
+	font-weight: 700;
+	opacity: 1;
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main__content {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+	width: 45%;
+}
+
+.main__title {
+	color: var(--menu-text-color);
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 3.5rem;
+}
+
+.main__title span {
+	color: var(--brand-color);
+}
+
+.main__text {
+	color: var(--body-text-color);
+	font-size: .875rem;
+	font-weight: 400;
+	line-height: 1.75rem;
+}
+
+.main__text span {
+	font-weight: 700;
+}
+
+.main__button {
+	color: var(--btn-text-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .625rem;
+	font-size: 1rem;
+	font-weight: 400;
+	width: 11.375rem;
+	height: 3.5rem;
+	padding: 0;
+	background-color: var(--btn-bg-color);
+	border: none;
+	border-radius: 4px;
+}
+
+.main__illustration {
+	width: 40%;
+}
+
+.main__illustration img {
+	width: 100%;
+}
+
+.footer {
+	margin-top: 5rem;
+	padding-bottom: 2rem;
+}
+
+.footer p {
+	color: var(--menu-text-color);
+	font-size: .875rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.footer p a {
+	color: var(--menu-text-color);
+	text-decoration: none;
+	font-weight: 700;
 }
