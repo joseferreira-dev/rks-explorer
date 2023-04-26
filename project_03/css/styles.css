@@ -1,0 +1,24 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,600;0,700;1,600;1,700&family=Open+Sans:ital@0;1&display=swap');
+
+:root {
+	--header-bg-color: #121214;
+	--header-title-color: #FFFFFF;
+	--header-text-color: #42D3FF;
+	--body-bg-color: #D9D9D9;
+	--form-bg-color: #FAFAFC;
+	--form-title-color: #32264D;
+	--form-text-color: #4E4958;
+	--form-placeholder-color: #C1BCCC;
+	--form-required-color: #FF1010;
+	--form-footer-color: #F0F0F4;
+	--btn-bg-color: #04D361;
+	--font-title: 'Archivo', Arial, sans-serif;
+}
+
+html {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 16px;
+	box-sizing: border-box;
+	background-color: var(--background-color);
+}
