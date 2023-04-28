@@ -16,7 +16,6 @@
 
 html {
 	font-family: 'Epilogue', Arial, sans-serif;
-	font-size: 16px;
 	background-color: var(--body-bg-color);
 }
 
@@ -25,4 +24,95 @@ html {
 	padding: 5rem 2rem;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.header {
+	color: var(--header-color);
+	font-size: 1rem;
+	line-height: 32px;
+	letter-spacing: 3px;
+	margin-bottom: 1rem;
+}
+
+.main {
+	display: flex;
+	align-items: start;
+	gap: 7.25rem;
+}
+
+.main__texts {
+	max-width: 480px;
+}
+
+.main__texts h1 {
+	color: var(--title-text-color);
+	font-size: 2.5rem;
+	font-weight: 800;
+	line-height: 3rem;
+	margin-bottom: 2rem;
+}
+
+.main__texts p {
+	color: var(--body-text-color);
+	font-size: 1rem;
+	line-height: 2rem;
+	margin-bottom: 1.75rem;
+}
+
+.main__texts a {
+	color: var(--title-text-color);
+	text-decoration: none;
+	font-size: 1rem;
+	line-height: 2rem;
+}
+
+.main__list {
+	max-width: 480px;
+}
+
+.main__list ul {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.main__list ul li {
+	display: flex;
+	align-items: center;
+	gap: 4.125rem;
+}
+
+.main__list p:first-child {
+	color: var(--title-text-color);
+	display: inline-block;
+	font-size: 4.5rem;
+	line-height: 5rem;
+	font-weight: 800;
+	width: 3rem;
+}
+
+.main__list p:last-child {
+	color: var(--title-text-color);
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 960px) {
+	.main {
+		gap: 4.5rem;
+	}
+
+	.main__texts {
+		max-width: 400px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.main {
+		flex-direction: column;
+	}
+
+	.main__texts {
+		max-width: 100%;
+	}
 }
