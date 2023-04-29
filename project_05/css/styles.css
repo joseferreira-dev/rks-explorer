@@ -1,0 +1,28 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,800;1,400;1,800&display=swap');
+
+:root {
+	--light-text-color: #BBB3E5;
+	--white-text-color: #FFFFFF;
+	--dark-text-color: #090039;
+	--bg-color: #28293E;
+	--bg-over-color: #5C2000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+	font-family: 'Epilogue', Arial, sans-serif;
+	background-color: var(--bg-color);
+}
+
+.container {
+	max-width: 1170px;
+	padding: 5.75rem 2rem 2rem;
+	margin-left: auto;
+	margin-right: auto;
+}
