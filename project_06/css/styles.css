@@ -1,0 +1,88 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+:root {
+  font-size: 16px;
+
+	--font-primary: 'DM Sans', Arial, sans-serif;
+  --font-secondary: 'Montserrat', Arial, sans-serif;;
+  
+  --text-color: #34355B;
+  --body-gradient: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
+  --white: #FFFFFF;
+  --purple: #7879F1;
+  --gray: #DCE2E9;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+	font-family: var(--font-primary);
+	background: var(--body-gradient);
+}
+
+.container {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.game {
+  width: 428px;
+  height: 274px;
+  text-align: center;
+  padding: 3rem 4rem 4rem;
+  border-radius: .375rem;
+  background: var(--white);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game__title {
+  color: var(--text-color);
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.game__instruction {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+  opacity: 80%;
+}
+
+.game__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game__input input,
+.game__input button {
+  font-size: 1rem;
+  margin: 0;
+  padding: 1rem;
+  border: none;
+}
+
+.game__input input {
+  color: var(--text-color);
+  width: 4rem;
+  border-radius: .25rem 0 0 .25rem;
+  background-color: var(--gray);
+}
+
+.game__input button {
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 0 .25rem .25rem 0;
+  background-color: var(--purple);
+}
