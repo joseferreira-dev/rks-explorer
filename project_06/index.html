@@ -12,18 +12,19 @@
       <div class="game__start">
         <h1 class="game__title">Jogo da Adivinhação</h1>
         <p class="game__instruction">Adivinhe o número entre 0 e 10</p>
-        <div class="game__input">
-          <input type="number" id="number" name="number">
-          <button>Tentar</button>
-        </div>
+        <form class="game__input">
+          <input type="number" id="number" name="number" min="0" max="10">
+          <button id="btnTry">Tentar</button>
+        </form>
       </div>
-      <div class="game__end">
+      <div class="game__end hide">
         <h1 class="game__title">Acertou em x tentativas!</h1>
         <div class="game__input">
-          <button>Jogar novamente</button>
+          <button  id="btnRestart">Jogar novamente</button>
         </div>
       </div>
     </div>
 	</div>
+  <script src="js/index.js"></script>
 </body>
 </html>
