@@ -86,3 +86,15 @@ html {
   border-radius: 0 .25rem .25rem 0;
   background-color: var(--purple);
 }
+
+.game__end {
+  display: none;
+}
+
+.game__end .game__title {
+  margin-bottom: 3rem;
+}
+
+.game__end .game__input button {
+  border-radius: .25rem;
+}
