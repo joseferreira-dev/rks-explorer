@@ -1,0 +1,22 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+* {
+  --font-primary: 'Roboto', Arial, sans-serif;
+  
+  --body-bg-color: #040924;
+  --title-color: #0C3440;
+  --text-color: #00453A;
+  --btn-bg-color: #02799D;
+  --input-bg-color: #DCE2E9;
+  --input-border-color: 1px solid rgba(73, 80, 87, 0.3);;
+  --input-border-color-focus: #02799D;
+  --white: #FFFFFF;
+}
+
+
+html {
+	font-family: var(--font-primary);
+	background: var(--body-bg-color);
+}
+
