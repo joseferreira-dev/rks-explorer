@@ -7,9 +7,25 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<div class="container">
-		
-	</div>
+	<main class="main">
+		<div class="container">
+			<h1 class="main__title">Cálculo de IMC</h1>
+			<form class="main__form" action="">
+				<div class="input-group">
+					<label for="weight">Peso (kg)</label>
+					<input type="text" name="weight" id="weight">
+				</div>
+				<div class="input-group">
+					<label for="height">Altura (m)</label>
+					<input type="text" name="height" id="height">
+				</div>
+				<button class="btn">
+					<span class="btn__text">Cálcular IMC</span>
+					<img class="btn__icon" src="assets/icon-arrow.svg" alt="Arrow icon">
+				</button>
+			</form>
+		</div>
+	</main>
   <script src="js/index.js"></script>
 </body>
 </html>
